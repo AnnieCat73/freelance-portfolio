@@ -14,7 +14,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <a href="#" class="btn btn-primary">hello</a>
+    <header>
+      <div class="nav-mobile">
+        <div class="nav-left">
+          <p class="logo">annies designs</p>
+          <p>Designer & Developer</p>
+        </div>
+        <!--Hamburger menu for mobile and tablet-->
+        <button aria-label="Open navigation" class="open-nav">&#9776;</button>
+        <!--Inside menu for mobile and tablet-->
+        <nav class="menu-inside">
+          <button aria-label="Close navigation" class="close-nav">
+            &times
+          </button>
+          <hr class="nav-line" />
+          <ul class="list-inside">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <hr class="nav-line" />
+            <li>
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <hr class="nav-line" />
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <hr class="nav-line" />
+            <li><a href="#work" class="nav-link">Work</a></li>
+            <hr class="nav-line" />
+            <li><a href="#contact" class="nav-link">Connect</a></li>
+            <hr class="nav-line" />
+          </ul>
+        </nav>
+      </div>
+      <nav class="nav-large">
+        <p class="logo">annies designs</p>
+        <ul>
+          <li>
+            <a href="#" class="nav-item">Services</a>
+          </li>
+          <li>
+            <a href="#" class="nav-item">Work</a>
+          </li>
+          <li>
+            <a href="#" class="nav-item">About</a>
+          </li>
+          <li>
+            <a href="#" class="nav-item nav-btn">Connect</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <script src="script.js"></script>
   </body>
 </html>

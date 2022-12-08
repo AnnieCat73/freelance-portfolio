@@ -300,3 +300,20 @@ section {
     margin-top: 3.5rem;/*56px*/
   }
 }
+
+
+/*Header*/
+
+header .large {
+  display: none;
+}
+
+@media (min-width: 36em) {
+  header .nav-mobile {
+    display:  none;
+  }
+
+  .header .nav-large {
+    display: flex;
+  }
+}
