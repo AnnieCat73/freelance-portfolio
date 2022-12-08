@@ -1,14 +1,15 @@
-//Navigation for mobile and tablet
+//Menu on mobile
 
+//Get elements
 const closeBtn = document.querySelector(".close-nav");
 const openBtn = document.querySelector(".open-nav");
 const navMenu = document.querySelector(".menu-nav-mobile");
 
 //Attach eventlisteners and toggle navigation-open class
-openBtn.addEventListener("click", () => {
-  navMenu.classList.toggle("navigation-open");
+closeBtn.addEventListener("click", () => {
+  navMenu.classList.remove("navigation-open");
 });
 
-closeBtn.addEventListener("click", () => {
-  navMenu.classList.toggle("navigation-open");
+openBtn.addEventListener("click", () => {
+  navMenu.classList.add("navigation-open");
 });
