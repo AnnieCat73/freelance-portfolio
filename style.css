@@ -546,7 +546,7 @@ aside {
 
 @media (min-width: 62em) {
   aside {
-    display: block;
+    display: flex;
     justify-content: center;
     width: 290px;
     flex-basis: 290px;
