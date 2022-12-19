@@ -488,7 +488,7 @@ header .nav-large {
   }
   .logo:hover,
   .logo:focus {
-    opacity: 0.7;
+    opacity: 0.8;
   }
   .nav-large ul .nav-item {
     text-decoration: none;
@@ -500,10 +500,7 @@ header .nav-large {
     outline: 2px solid var(--clr-accent-300);
   }
 
-  .nav-item:hover,
-  .nav-item:focus {
-    opacity: 1; 
-  }
+  
   .nav-item {
     color: var(--clr-neutral-300);
     opacity: 0.8;
@@ -514,15 +511,24 @@ header .nav-large {
     transform: scaleX(0);
     
   }
-  .nav-item:hover::after {
+
+  .nav-item:hover,
+  .nav-item:focus {
+    opacity: 1; 
+  }
+  .nav-item::before {
     content: "";
     position: absolute;
     height: 2px;
     background-color: var(--clr-accent-300);
-    width: 100%;
-    bottom: -3px;
+    width: 0;
+    bottom: -10px;
     left: 0;
     transform: scaleX(1);
+    transition: width 0.25s ease-out;
+  }
+  .nav-item:hover::before {
+    width: 100%;
   }
 
   
