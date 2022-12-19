@@ -667,6 +667,11 @@ main {
   padding: 2rem 1.5rem;
 }
 
+/*For scrollbar to not show but still be able to scroll
+NOT WORKING
+main::-webkit-scrollbar {
+  display: none;
+}*/
 
 @media (min-width: 62em) {
   main {
