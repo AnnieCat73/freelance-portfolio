@@ -187,7 +187,27 @@ h2 {
   line-height: 1.2;
   font-weight: var(--fw-700);
   font-size: var(--fs-700);
+  
 }
+
+.heading-underline {
+  position: relative;
+  
+}
+
+.heading-underline::before {
+  background-color: var(--clr-accent-300);
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 4px;
+  
+  
+}
+
+
 
 h3 {
   font-weight: var(--fw-600);
@@ -333,6 +353,18 @@ section {
 
 
 /*Components*/
+
+.section-headings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.section-subtitle {
+  opacity: 0.7;
+  text-transform: capitalize;
+}
 
 .divider {
   border-top: solid .5px var(--clr-neutral-300);
@@ -854,25 +886,11 @@ main::-webkit-scrollbar {
   display: none;
 }
 
-/**/
-.section-headings {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5em;
-}
-
-.section-subtitle {
-  opacity: 0.7;
-  text-transform: capitalize;
-}
-/**/
-
 .why {
   
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: 1fr 1fr;
+  grid-auto-rows: 1fr auto;
   gap: 3em;
 }
 
@@ -881,8 +899,6 @@ main::-webkit-scrollbar {
   flex-direction: column;
   gap: 1.5em;
 }
-
-
 
 
 @media (min-width: 62em) {
@@ -896,5 +912,71 @@ main::-webkit-scrollbar {
   }
   .why-content p {
     max-width: 75ch;
+  }
+}
+
+/*SERVICES*/
+
+
+
+.divider:nth-of-type(2) {
+  display: block;
+}
+
+.services {
+  gap: 3.5em;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  gap: 3em;
+}
+
+.service {
+  justify-content: center;
+  gap: 1.5em;
+  padding: 1rem;
+  box-shadow: 0px 4px 16px -4px rgba(0, 0, 0, 0.25);
+}
+
+.service-seo {
+  background-image: url(images/SEO.svg);
+  width: 2.5rem;
+  height: 2rem;
+  opacity: 0.8;
+}
+.service-design {
+  background-image: url(images/Pen.svg);
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.service-webflow {
+  background-image: url(images/Webflow.svg);
+  width: 2.5rem;
+  height: 1.731rem;
+}
+.service-development {
+  background-image: url(images/Computer.svg);
+  width: 2.75rem;
+  height: 2.25rem;
+}
+
+.service h3 {
+  text-align: center;
+}
+
+.service p {
+  text-align: center;
+}
+
+@media (min-width: 36em) {
+  .services {
+    gap: 4rem;
+  }
+}
+@media (min-width: 62em) {
+  .services {
+    gap: 4.5rem;
   }
 }
