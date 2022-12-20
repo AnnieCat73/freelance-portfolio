@@ -368,8 +368,18 @@ section {
 
 .divider {
   border-top: solid .5px var(--clr-neutral-300);
-  opacity: 0.3;
+  opacity: 0.1;
   
+}
+
+.divider:nth-of-type(2),
+.divider:nth-of-type(3), 
+.divider:nth-of-type(4), 
+.divider:nth-of-type(5), 
+.divider:nth-of-type(6),
+.divider:nth-of-type(7),
+.divider:nth-of-type(8) {
+  display: block;
 }
 
 .line {
@@ -919,9 +929,7 @@ main::-webkit-scrollbar {
 
 
 
-.divider:nth-of-type(2) {
-  display: block;
-}
+
 
 .services {
   gap: 3.5em;
@@ -980,3 +988,5 @@ main::-webkit-scrollbar {
     gap: 4.5rem;
   }
 }
+
+/*MY PORTFOLIO*/
