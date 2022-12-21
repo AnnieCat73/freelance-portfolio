@@ -993,22 +993,28 @@ main::-webkit-scrollbar {
 }
 /*MY PORTFOLIO*/
 
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 3.5em;
+}
+
 
 /*TESTIMONIALS*/
 
 .testimonials {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  gap: 3.5em;
+  gap: 2.5em;
 }
 
 .testimonials-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2.5em;
+  grid-template-rows: auto auto auto;
+  gap: 3.5em;
 }
-
 .testimonial-quote {
   position: relative;
   padding-left: 26px;
