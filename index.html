@@ -614,7 +614,36 @@
                   </div>
                 </div>
               </div>
-              <div class="form-container"></div>
+              <div class="form-container">
+                <form name="contact-form">
+                  <div class="form-control">
+                    <label>Full Name</label>
+                    <input name="name" placeholder="First and Last Name" />
+                    <div class="error hide">Name is required</div>
+                  </div>
+
+                  <div class="form-control">
+                    <label>Email</label>
+                    <input name="email" placeholder="example@domain.com" />
+                    <div class="error hide">Email is invalid</div>
+                  </div>
+
+                  <div class="form-control">
+                    <label>Message</label>
+                    <textarea
+                      name="message"
+                      placeholder="How may I help you? Enter your message"
+                      rows="6"
+                    ></textarea>
+                    <div class="error hide">Message is required</div>
+                  </div>
+
+                  <button class="submit-btn btn" type="submit">
+                    Get Started
+                  </button>
+                </form>
+                <div class="thank-you hide">Thank you for your feedback!</div>
+              </div>
             </div>
           </section>
         </div>
