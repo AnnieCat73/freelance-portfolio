@@ -221,6 +221,11 @@ h3 {
   font-size: var(--fs-400);
 }
 
+.large-text {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-600);
+}
+
 
 
 .btn {
@@ -309,7 +314,7 @@ section {
   margin-top: 3rem;/*48px*/
 }
 .flow-content-small > * + * { 
-  margin-top: 1.2rem;/*32px*/
+  margin-top: 1rem;/*32px*/
 }
 
 .split {
@@ -374,7 +379,8 @@ section {
 .divider:nth-of-type(5), 
 .divider:nth-of-type(6),
 .divider:nth-of-type(7),
-.divider:nth-of-type(8) {
+.divider:nth-of-type(8)
+ {
   display: block;
 }
 
@@ -1409,7 +1415,7 @@ main::-webkit-scrollbar {
   cursor: pointer;
   display: block;
   font-size: var(--fs-400);
-  font-weight: var(--fw-700);
+  font-weight: var(--fw-600);
   padding: 30px 0 0 0;
   position: relative;
   margin-bottom: 0;
@@ -1446,11 +1452,14 @@ main::-webkit-scrollbar {
   border-style: none;
   border-width: none;
 }
+
+/*/*/
+
 .faq-drawer-content p {
   font-size: var(--fs-300);
 }
 
-/* OPTIONAL HOVER STATE */
+/* Hover state */
 .faq-drawer-title:hover { 
   opacity: 0.7;
 }
@@ -1495,4 +1504,78 @@ input[type="checkbox"] {
 
 
 /*CONTACT*/
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 3em;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 2.5em;
+}
+
+.contact-top {
+  align-items: flex-start;
+  gap: 2.5em;
+}
+
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact-method {
+  display: flex;
+  gap: 1em;
+}
+.contact-method:nth-of-type(1) {
+  
+  gap: 1.4em;
+}
+
+@media (min-width: 36em) {
+  .contact {
+    gap: 4em;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5em;
+  }
+
+  .contact-top {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    flex-direction: row;
+  }
+  .form-container {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+
+  .contact-text,
+  .contact-options {
+    flex-basis: 50%;
+  }
+
+  .contact-options {
+    padding-top: 3em;
+  }
+  
+}
+
+@media (min-width: 62em) {
+  .contact {
+    gap: 5em;
+  }
+  .contact-content {
+    gap: 4em;
+  }
+}
 /*FOOTER*/
