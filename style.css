@@ -1368,8 +1368,27 @@ main::-webkit-scrollbar {
 
 /*FAQ*/
 
+.faq {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 3.5em;
+}
 
+.faq-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4em;
+}
 
+.faq-content a {
+  color: #1577ea;
+  text-decoration: underline;
+}
+.faq-content a:hover,
+.faq-content a:focus {
+  opacity: 0.7;
+}
 
 /*FAQ-container*/
 
@@ -1441,7 +1460,19 @@ input[type="checkbox"] {
 }
 
 
+@media (min-width: 36em) {
+  .faq {
+    gap: 4em;
+  }
+  
+}
 
+@media (min-width: 62em) {
+  .faq {
+    gap: 5em;
+  }
+  
+}
 
 
 
