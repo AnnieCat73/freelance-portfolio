@@ -148,7 +148,13 @@ body {
   line-height: 1.5;
   font-family: var(--ff-sans);
   font-size: var(--fs-400);
+ 
   /*min-height: 100vh;/**/
+}
+
+/*hiding scrollbar in chrome*/
+body::-webkit-scrollbar{
+  display: none;
 }
 
 a {
@@ -222,7 +228,7 @@ h3 {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  transition: all .25s ease;
+  /*transition: all .25s ease;*/
   width: auto;
   
 }
@@ -580,6 +586,7 @@ header .nav-large {
   .nav-large .nav-btn {
     color: var(--clr-accent-300);
     outline: 2px solid var(--clr-accent-300);
+    transition: all ease-in-out .3s;
   }
 
   
@@ -588,10 +595,10 @@ header .nav-large {
     opacity: 0.8;
     text-transform: capitalize;
     font-size: var(--fs-400);
-    transition: all 0.4 ease;
+    /*transition: all 0.4 ease;*/
     position: relative;
     transform: scaleX(0);
-    
+    transition: all ease-in-out .3s;
   }
 
   .nav-item:hover,
@@ -683,7 +690,7 @@ aside {
     text-align: center;
     line-height: 1;
     cursor: pointer;
-
+    transition: all ease-in-out .3s;
   }
 
   .logo-sidebar {
@@ -716,6 +723,8 @@ aside {
     text-decoration: underline;
     font-weight: var(--fw-500);
     align-self: center;
+    transition: all ease-in-out .3s;
+  
   }
 
   .sidebar-cta:hover,
@@ -732,6 +741,10 @@ aside {
 
   .socials .bi {
     color: var(--clr-neutral-300);
+  }
+
+  .socials a {
+    transition: all ease-in-out .3s;
   }
 
   .socials a:hover,
