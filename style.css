@@ -234,7 +234,7 @@ h3 {
   padding:0.75em 1.875em;
   /*padding: 0.75em 1.25em;/*12px 20px*/
   margin-right: auto;
-  
+  transition: all ease-in-out .3s;
 }
 
 .btn-primary:hover,
@@ -248,6 +248,7 @@ h3 {
   border: 1px solid var(--clr-secondary-btn);
   margin-right: auto;
   padding: 0.75em 1.62em;/*10px 30px*/
+  transition: all ease-in-out .5s;
 }
 
 .btn-secondary:hover,
@@ -434,6 +435,7 @@ header .nav-large {
   font-family: var(--ff-serif);
   font-size: var(--fs-200);
   color: var(--clr-neutral-300);
+  transition: all ease-in-out .3s;
 }
 
 
@@ -485,7 +487,7 @@ header .nav-large {
 .logo:focus,
 .open-nav:hover,
 .open-nav:focus {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .close-nav:hover,
 .close-nav:focus {
@@ -498,7 +500,8 @@ header .nav-large {
   flex-direction: column;
   align-items: center;
   gap: 2em;
-  opacity: 0.7;
+  opacity: 0.8;
+  transition: all ease-in-out .3s;
 }
 
 .list-inside li:hover {
@@ -1421,7 +1424,8 @@ main::-webkit-scrollbar {
 
 .faq-content a {
   color: #1577ea;
-  text-decoration: underline;
+  text-decoration: underline; 
+  transition: all ease-in-out .3s;
 }
 .faq-content a:hover,
 .faq-content a:focus {
@@ -1589,8 +1593,8 @@ input[type="checkbox"] {
   gap: 0.4em;
 }
 
-.invalid {
-  border: 1px solid var(--clr-hover-primary);
+.contact .invalid {
+  border: 1px solid var(--clr-hover-secondary);
 }
 
 
@@ -1658,6 +1662,7 @@ textarea {
   line-height: 1.125;
   padding: 0.8em 1.5em;/*CAN CHANGE IT TO MATCH BNTS UP*/
   justify-self: start;
+  transition: all ease-in-out .3s;
 }
 
 
