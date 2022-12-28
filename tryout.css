@@ -327,13 +327,7 @@ section {
 
 /*desktop*/
 @media (min-width: 62em) {
-  section {
-    padding: 7.25rem 0;
-  }
-  .flow-content-large > * + * { 
-    margin-top: 3.5rem;/*56px*/
-  }
-  /**/
+
   .main-container {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -353,7 +347,12 @@ section {
     grid-column: 2 / -1;
     grid-row: 2 /3;
   }
-  /**/
+  section {
+    padding: 7.25rem 0;
+  }
+  .flow-content-large > * + * { 
+    margin-top: 3.5rem;/*56px*/
+  }
 }
 
 
