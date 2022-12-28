@@ -34,30 +34,30 @@
           </button>
           <ul class="list-inside">
             <li><a href="index.html" class="nav-link">Home</a></li>
-            <li>
+            <li id="js-about">
               <a href="#about" class="nav-link">About</a>
             </li>
-            <li><a href="#services" class="nav-link">Services</a></li>
-            <li><a href="#work" class="nav-link">Work</a></li>
-            <li><a href="#contact" class="inside-btn">Connect</a></li>
+            <li id="js-services"><a href="#services" class="nav-link">Services</a></li>
+            <li id="js-work"><a href="#work" class="nav-link">Work</a></li>
+            <li id="js-contact"><a href="#contact" class="inside-btn">Connect</a></li>
           </ul>
         </nav>
       </div>
       <!--Nav on larger screens-->
       <nav class="nav-large">
-        <a href="#" class="logo">annies designs</a>
+        <a href="index.html" class="logo">annies designs</a>
         <ul>
           <li>
-            <a href="#" class="nav-item">Services</a>
+            <a href="#services" class="nav-item">Services</a>
           </li>
           <li>
-            <a href="#" class="nav-item">Work</a>
+            <a href="#work" class="nav-item">Work</a>
           </li>
           <li>
-            <a href="#" class="nav-item">About</a>
+            <a href="#about" class="nav-item">About</a>
           </li>
           <li>
-            <a href="#" class="nav-btn">Connect</a>
+            <a href="#contact" class="nav-btn">Connect</a>
           </li>
         </ul>
       </nav>
@@ -67,7 +67,7 @@
       <!--aside-->
       <aside>
         <div class="sidebar split-column">
-          <a class="logo-sidebar">annies<span>designs</span> </a>
+          <a class="logo-sidebar" href="index.html">annies<span>designs</span> </a>
           <figure>
             <img
               src="images/img-hero@3x.jpg"
@@ -78,11 +78,18 @@
           <div class="sidebar-content split-column">
             <p>Web designer, front-end and Webflow developer</p>
             <div class="socials">
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-github"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/annieindreitendeveloper/"
+              target="_blank"
+              rel="noreferrer"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/AnnieCat73"
+              target="_blank"
+              rel="noreferrer"
+              ><i class="bi bi-github"></i></a>
+              <a href="https://twitter.com/annie_indreiten/" 
+              target="_blank"
+              rel="noreferrer"><i class="bi bi-twitter"></i></a>
             </div>
-            <a href="#" class="sidebar-cta">Get In Touch</a>
+            <a href="#contact" class="sidebar-cta">Get In Touch</a>
           </div>
         </div>
       </aside>
@@ -115,8 +122,8 @@
             </div>
 
             <div class="hero-btns">
-              <a href="#" class="btn btn-primary">View My Works</a>
-              <a href="#" class="btn btn-secondary">Get to know me</a>
+              <a href="#work" class="btn btn-primary">View My Works</a>
+              <a href="#about" class="btn btn-secondary">Get to know me</a>
             </div>
           </section>
           <div class="divider"></div>
@@ -187,7 +194,7 @@
           </section>
           <div class="divider"></div>
           <!--Services-->
-          <section class="services split-column">
+          <section class="services split-column" id="services">
             <div class="section-headings">
               <p class="section-subtitle">What I do</p>
               <h2 class="heading-underline">My Services</h2>
@@ -229,7 +236,7 @@
           </section>
           <div class="divider"></div>
           <!--Portfolio-->
-          <section class="portfolio">
+          <section class="portfolio" id="work">
             <div class="section-headings">
               <p class="section-subtitle">My Latest Work</p>
               <h2 class="heading-underline">My Portfolio</h2>
@@ -448,7 +455,7 @@
           </section>
           <div class="divider"></div>
           <!--About-->
-          <section class="about">
+          <section class="about" id="about">
             <div class="section-headings">
               <p class="section-subtitle">Who is Annie</p>
               <h2 class="heading-underline">About me</h2>
@@ -488,7 +495,7 @@
 
           <div class="divider"></div>
            <!--Contact-->
-           <section class="contact">
+           <section class="contact" id="contact">
             <div class="section-headings">
               <p class="section-subtitle">let's work together</p>
               <h2 class="heading-underline">My Contact Details</h2>
@@ -556,7 +563,7 @@
               <p>
                 Please find below some of the questions I am regularly asked. If
                 you find your question unanswered below then please call me on
-                07962 344 427 or complete my contact form <a href="#">here</a>.
+                07962 344 427 or complete my contact form <a href="#contact">here</a>.
               </p>
               <div class="faq-container">
                 <div class="faq-drawer">
@@ -704,7 +711,7 @@
                 </p>
                 <h2>Let's get started</h2>
               </div>
-              <button class="btn btn-primary btn-large">Get in touch</button>
+              <a class="btn btn-primary btn-large" href="#contact">Get in touch</a>
               
             </div> 
             <div class="divider"></div>

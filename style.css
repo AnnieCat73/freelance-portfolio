@@ -684,6 +684,7 @@ aside {
   }
 
   .sidebar .logo-sidebar {
+    color: var(--clr-neutral-300);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1813,7 +1814,7 @@ input[type="checkbox"] {
   padding-bottom: 4.5rem;
 }
 
-.cta-container button {
+.cta-container .btn-large {
  margin: 0 auto;
 }
 
