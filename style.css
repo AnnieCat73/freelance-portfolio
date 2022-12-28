@@ -1615,10 +1615,10 @@ input[type="checkbox"] {
 .contact textarea { 
   
  
-  border: 1px solid rgba(39, 38, 38, 0.1);
+  border: 1px solid rgba(39, 38, 38, 0.2);
   border-radius: 4px;
   width: 100%;
-  padding: 0.8125em 0.75em 0.75em 0.75em;
+  padding: 0.8125em 0.75em 0.75em 1em;
   font-size: var(--fs-400);
   outline: none;
   color: var(--clr-neutral-300);
@@ -1626,12 +1626,20 @@ input[type="checkbox"] {
 
 .contact input:focus,
 .contact textarea:focus {
-  outline: none;
+  outline-color: transparent;
+  box-shadow: 0 0 0 1px rgba(38,31,32, 0.7);
+  background-color:rgba(38,31,32, 0.1);
 }
+/*
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+}*/
 
 .contact input::placeholder,
 textarea::placeholder {
  font-size: var(--fs-400);
+ font-style: italic;
 }
 
 
@@ -1647,7 +1655,7 @@ textarea::placeholder {
 .contact label {
   display: block;
   font-size: var(--fs-200);
-  margin-bottom: 0.375em;
+  margin-bottom: 0.4em; /*0.375em;*/
   opacity: 0.8;
 }
 
@@ -1689,7 +1697,7 @@ textarea {
 .thank-you {
   color: var(--clr-accent-300);
   padding: 3em 0;
-  font-size: var(--fs-600);
+  font-size: var(--fs-500);
   font-weight: var(--fw-700);
   text-align: center;
 }
@@ -1765,6 +1773,10 @@ textarea {
   }
   .contact-content {
     gap: 4em;
+  }
+
+  .thank-you {
+    padding: 3em 4em 0 0;
   }
 }
 /*FOOTER*/
