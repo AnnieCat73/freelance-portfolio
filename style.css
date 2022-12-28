@@ -1420,138 +1420,6 @@ main::-webkit-scrollbar {
 }
 
 
-/*FAQ*/
-
-.faq {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  gap: 3.5em;
-}
-
-.faq-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3em;
-}
-
-.faq-content a {
-  color: #1577ea;
-  text-decoration: underline; 
-  transition: all ease-in-out .3s;
-}
-.faq-content a:hover,
-.faq-content a:focus {
-  opacity: 0.7;
-}
-
-/*FAQ-container*/
-
-.faq-drawer {
-  margin-bottom: 30px;
-}
-
-.faq-drawer-wrapper {
-  font-size: 1.25em;
-  line-height: 1.4em;
-  max-height: 0px;
-  overflow: hidden;
-  transition: 0.25s ease-in-out;
-}
-
-.faq-drawer-title {
-  border-top: 1px solid rgba(38, 31, 32, 0.3);
-  cursor: pointer;
-  display: block;
-  font-size: var(--fs-400);
-  font-weight: var(--fw-600);
-  padding: 30px 0 0 0;
-  position: relative;
-  margin-bottom: 0;
-  transition: all 0.25s ease-out;
-}
-
-
-
-.faq-drawer-title::after {
-  border-style: solid;
-  border-width: 1px 1px 0 0;
-  content: " ";
-  display: inline-block;
-  float: right;
-  height: 10px;
-  left: 2px;
-  position: relative;
-  right: 20px;
-  top: 2px;
-  transform: rotate(135deg);
-  transition: 0.35s ease-in-out;
-  vertical-align: top;
-  width: 10px;
-}
-
-
-/*Applied to the last question to get border bottom only*/
-.faq-drawer-title.last {
-  position: relative;
-}
-.faq-drawer-title.last::after {
-  content: "";
-  position: absolute;
-  border-style: none;
-  border-width: none;
-}
-
-/*/*/
-
-.faq-drawer-content p {
-  font-size: var(--fs-300);
-}
-
-/* Hover state */
-.faq-drawer-title:hover { 
-  opacity: 0.7;
-}
-
-.faq-drawer-trigger:checked
-  + .faq-drawer-title
-  + .faq-drawer-wrapper {
-  max-height: 350px;
-}
-
-.faq-drawer-trigger:checked + .faq-drawer-title::after {
-  transform: rotate(-45deg);
-  transition: 0.25s ease-in-out;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
-
-@media (min-width: 36em) {
-  .faq {
-    gap: 4em;
-  }
-
-  .faq-content {
-    gap: 3.5em;
-  }
-  
-}
-
-@media (min-width: 62em) {
-  .faq {
-    gap: 5em;
-  }
-  .faq-content {
-    gap: 4em;
-  }
-}
-
-
-
-
 /*CONTACT*/
 
 .contact {
@@ -1779,22 +1647,222 @@ textarea {
     padding: 3em 4em 0 0;
   }
 }
+
+
+
+/*FAQ*/
+
+.faq {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 3.5em;
+}
+
+.faq-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3em;
+}
+
+.faq-content a {
+  color: #1577ea;
+  text-decoration: underline; 
+  transition: all ease-in-out .3s;
+}
+.faq-content a:hover,
+.faq-content a:focus {
+  opacity: 0.7;
+}
+
+
+
+
+/*FAQ-container*/
+
+.faq-drawer {
+  margin-bottom: 30px;
+}
+
+.faq-drawer-wrapper {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.25s ease-in-out;
+}
+
+.faq-drawer-title {
+  border-top: 1px solid rgba(38, 31, 32, 0.3);
+  cursor: pointer;
+  display: block;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-600);
+  padding: 30px 0 0 0;
+  position: relative;
+  margin-bottom: 0;
+  transition: all 0.25s ease-out;
+}
+
+
+
+.faq-drawer-title::after {
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  content: " ";
+  display: inline-block;
+  float: right;
+  height: 10px;
+  left: 2px;
+  position: relative;
+  right: 20px;
+  top: 2px;
+  transform: rotate(135deg);
+  transition: 0.35s ease-in-out;
+  vertical-align: top;
+  width: 10px;
+}
+
+
+/*Applied to the last question to get border bottom only*/
+.faq-drawer-title.last {
+  position: relative;
+}
+.faq-drawer-title.last::after {
+  content: "";
+  position: absolute;
+  border-style: none;
+  border-width: none;
+}
+
+/*/*/
+
+.faq-drawer-content p {
+  font-size: var(--fs-300);
+}
+
+/* Hover state */
+.faq-drawer-title:hover { 
+  opacity: 0.7;
+}
+
+.faq-drawer-trigger:checked
+  + .faq-drawer-title
+  + .faq-drawer-wrapper {
+  max-height: 350px;
+}
+
+.faq-drawer-trigger:checked + .faq-drawer-title::after {
+  transform: rotate(-45deg);
+  transition: 0.25s ease-in-out;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
+@media (min-width: 36em) {
+  .faq {
+    gap: 4em;
+  }
+
+  .faq-content {
+    gap: 3.5em;
+  }
+  
+}
+
+@media (min-width: 62em) {
+  .faq {
+    gap: 5em;
+  }
+  .faq-content {
+    gap: 4em;
+  }
+}
+
+
+
+
+
+
+
+/*CTA-LARGE*/
+.cta-large .divider {
+  max-width: 60%;
+  margin: 0 auto;
+  padding-top: 7.25rem;
+}
+.cta-large h2 {
+  font-size:  clamp(2.3rem, 2.1200rem + 0.9000vw, 3.2rem);
+}
+
+.btn-large {
+  text-transform: uppercase;
+  padding: 1em 2.5em;
+ 
+
+}
+
+.cta-container {
+  /*border-bottom: solid .5px var(--clr-neutral-300);*/
+ 
+  gap: 2.5em;
+  text-transform: capitalize;
+  padding-bottom: 4.5rem;
+}
+
+.cta-container button {
+ margin: 0 auto;
+}
+
+.cta-headings {
+  gap: 0.5em;
+}
+
+@media (min-width: 36em) {
+  .cta-container {
+    padding-bottom: 5.5rem;
+  }
+
+
+}
+
+@media (min-width: 62em) {
+  .cta-container {
+    padding-bottom: 7.25rem;
+  }
+
+  .divider:nth-of-type(9)
+  {
+    display: block;
+  }
+}
 /*FOOTER*/
 
 
 footer {
   padding: 2.5rem 0;
+  
 }
 .footer-content {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: var(--fs-200);
+  
   padding: 0 2rem;
 }
 
 .copy {
   align-self: center;
   margin-right: 0.3em;
+}
+
+@media(min-width: 62em) {
+  footer {
+    margin-left: 18.125rem;
+  }
 }
 
