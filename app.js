@@ -14,7 +14,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
-/* Animation for each section while scrolling down the page*/
+/* Animation for each section while scrolling down the page*
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
 
@@ -32,5 +32,5 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
-reveal();
+reveal();*/
 

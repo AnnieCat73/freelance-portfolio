@@ -185,17 +185,12 @@ h3 {
   line-height: 1.2;
   letter-spacing: -0.017px;
 }
-.heading-underline {
-  position: relative;
-  
-}
 
-.heading-underline::before {
+
+.underline {
   background-color: var(--clr-accent-300);
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
+ 
+  
   width: 100%;
   height: 4px;
   
@@ -423,7 +418,26 @@ section:last-of-type {
   
 }
 
+/*underline animation for each section*/
 
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(1);
+  transform: translateX(-50%);/*can also do -100px*/
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);/*can also do 0%*/
+}
 /*HEADER*/
 
 header .nav-large {

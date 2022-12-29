@@ -62,6 +62,22 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 reveal();
 
+/////
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    //console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+})
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
+
+////
 //Form validation in Contact Section
 const form = document.querySelector("form[name='contact-form']");
 const nameInput = document.querySelector("input[name='name']");
