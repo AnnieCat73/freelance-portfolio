@@ -1240,6 +1240,7 @@ main::-webkit-scrollbar {
   .portfolio-item {
     
     grid-template-rows: 18rem auto;
+   
     
   }
 
@@ -2033,6 +2034,23 @@ footer {
   }
 }
 
+
+
+/*PROJECTS PAGE*/
+
+.web-dev .section-headings,
+.email .section-headings {
+  margin-bottom: 3rem;
+}
+
+.web-dev {
+  padding-top: 0;
+}
+
+.email .section-headings,
+.web-dev .section-headings {
+  align-items: flex-start;
+}
 
 
 
