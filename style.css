@@ -101,6 +101,7 @@ h2,
 html {
   color-scheme: dark light;
   scrollbar-width: none;/*for firefox*/
+  scroll-behavior: smooth;
 }
 
 
@@ -232,7 +233,8 @@ h3 {
   border: 1px solid rgba(0, 0, 0, 0.4);
   color: var(--clr-neutral-100);
   background-color: var(--clr-accent-300);
-  padding:0.75em 1.875em;
+  /*padding:0.75em 1.875em;*/
+  padding: 0.875em 1.875em;
   /*padding: 0.75em 1.25em;/*12px 20px*/
   margin-right: auto;
   transition: all ease-in-out .3s;
@@ -248,7 +250,7 @@ h3 {
   background-color: transparent;
   border: 1px solid var(--clr-secondary-btn);
   margin-right: auto;
-  padding: 0.75em 1.62em;/*10px 30px*/
+  padding: 0.875em 1.62em;/*10px 30px*/
   transition: all ease-in-out .5s;
 }
 
@@ -1381,7 +1383,29 @@ main::-webkit-scrollbar {
   border-top: 3px solid var(--clr-accent-300);
   padding: 3em 2.5em;
   position: relative;
-  
+  transition: all ease-in-out 1s;
+  transform-origin: center center;
+}
+.process-phase::after {
+  position: absolute;
+  content: "";
+  position: absolute;
+  background-color: var(--clr-neutral-300);
+  opacity: 0.1;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.process-phase:hover,
+.process-phase:focus,
+.process-phase:focus:after, 
+.process-phase:active:after {
+  background-color: var(--clr-neutral-100);
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 4px 16px -4px rgb(0 0 0 / 35%);
 }
 
 .phase-number {
@@ -1395,17 +1419,7 @@ main::-webkit-scrollbar {
   z-index: 5;
 }
 
-.process-phase::after {
-  position: absolute;
-  content: "";
-  position: absolute;
-  background-color: var(--clr-neutral-300);
-  opacity: 0.1;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-}
+
 
 .process-headings {
   display: flex;
@@ -1643,10 +1657,13 @@ textarea {
 
 .submit-btn {
   background-color: var(--clr-accent-300);
+  cursor: pointer;
   color: var(--clr-neutral-100);
   border: 0;
+  border-radius: 4px;
   line-height: 1.125;
-  padding: 0.8em 1.5em;/*CAN CHANGE IT TO MATCH BNTS UP*/
+  padding: 0.875em 1.875em;
+  /*padding: 0.8em 1.5em;/*CAN CHANGE IT TO MATCH BNTS UP*/
   justify-self: start;
   transition: all ease-in-out .3s;
 }
