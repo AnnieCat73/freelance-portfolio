@@ -284,8 +284,12 @@ h4 {
  margin-bottom: 1rem;
 }
 
-.context ul {
+.context-item ul {
   list-style-type: disc;
+}
+
+.context-item .background {
+  list-style-type: none;
 }
 
 .context ul,
@@ -380,9 +384,7 @@ h4 {
 
 /*ITERATIONS*/
 
-.ui-design {
-  max-width: 70ch;
-}
+
 
 
 /*HIERARCHY*
@@ -447,13 +449,60 @@ h4 {
 
 /*UI-DESIGN*/
 
+.ui-design {
+  max-width: 70ch;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+.fonts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+.font-p {
+  padding-bottom: 0.8rem;
+}
+
+.typo-img-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+
+.ui-container ul,
+.fonts ul,
+.typo-conclusion ul {
+  list-style-type: disc;
+  align-items: flex-start;
+  gap: 1em;
+  padding-left: 0;
+  margin-left: 0;
+}
+.ui-container ul li,
+.fonts ul li,
+.typo-conclusion ul li{
+  margin-left: 1em;
+}
+
 .typo-info {
   font-size: var(--fs-200);
   opacity: 0.7;
   font-style: italic;
-  
 }
 
+.typo-img {
+  object-fit: cover;
+}
+
+.medium-brand {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
 /*DEVELOPMENT*/
 
 .development {
