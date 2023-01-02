@@ -185,6 +185,7 @@ h3 {
   font-weight: var(--fw-600);
   line-height: 1.2;
   letter-spacing: -0.017px;
+  text-transform: capitalize;
 }
 
 
@@ -862,8 +863,8 @@ main::-webkit-scrollbar {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto;
   gap: 2em;
-  justify-content: center;
-  align-items: center;
+  /*justify-content: center;*/
+  /*align-items: center;*/
   
 }
 
