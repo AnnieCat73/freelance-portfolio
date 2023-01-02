@@ -259,8 +259,17 @@ h4 {
 }
 
 /*CONTEXT/INSIGHT*/
+.intro {
+  font-size: var(--fs-200);
+  opacity: 0.7;
+  font-style: italic;
+  text-transform: uppercase;
+}
 
-
+.user-screenshot {
+  display: none;
+ 
+}
 
 .context-container {
   display: grid;
@@ -346,6 +355,28 @@ h4 {
     max-width: unset;
   }
 } 
+@media (min-width: 62em) {
+  
+  .user-stories-container {
+    display: none;
+  }
+
+  .user-screenshot {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  .user-img {
+    object-fit: cover;
+  }
+
+  .user-screenshot p {
+    font-size: var(--fs-200);
+    opacity: 0.7;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+} 
 
 /*ITERATIONS*/
 
@@ -411,6 +442,16 @@ h4 {
 }
 .box.red {
   background-color: #ff0000;
+}
+
+
+/*UI-DESIGN*/
+
+.typo-info {
+  font-size: var(--fs-200);
+  opacity: 0.7;
+  font-style: italic;
+  
 }
 
 /*DEVELOPMENT*/
