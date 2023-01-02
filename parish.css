@@ -162,6 +162,10 @@ a {
   text-decoration: none;
 }
 
+main {
+  margin-top: 15rem;
+}
+
 h4 {
   color: var(--clr-accent-300);
   font-size: var(--fs-100);
@@ -290,8 +294,8 @@ h4 {
   margin-top: 2rem;
 }
 
-.research,
-.strategies {
+.research-heading
+ {
   max-width: 70ch;
 }
 
@@ -304,6 +308,7 @@ h4 {
 
 .strategies {
   gap: 1.5rem;
+  max-width: 70ch;
 }
 
 .research-actions .action h4,
@@ -327,12 +332,18 @@ h4 {
   margin-top: 2.5rem;
 }
 
+
 @media (min-width: 58em) {
   
   .research-actions,
   .user-items,
   .strategies  {
     grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .strategies {
+    max-width: unset;
   }
 } 
 
@@ -402,7 +413,77 @@ h4 {
   background-color: #ff0000;
 }
 
-@media (min-width: 62em) {
+/*DEVELOPMENT*/
 
+.development {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.development-screenshots {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  gap: 4rem;
+}
+.development ul {
+  max-width: 70ch;
+  list-style-type: disc;
+}
+
+.development-screenshots p {
+  font-weight: var(--fw-600);
+  font-size: var(--fs-500);
+  margin-bottom: 3rem;
+  
+}
+
+.about-ex {
+  width: 100%;
+}
+
+.responsive-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*RESULTS*/
+
+.results {
+  max-width: 70ch;
+}
+
+
+/*BROWSE*/
+
+.cards {
+  display: flex;
+  gap: 2em;
+  margin-top: 2rem;
+}
+.card {
+  border-radius: 4px;
+  color: var(--clr-neutral-300);
+  cursor: pointer;
+  font-size: var(--fs-500);
+  font-weight: var(--fw-700);
+  text-decoration: none;
+  max-width: 25rem;
+  padding: 2rem;
+  box-shadow: 0 4px 16px -4px rgb(0 0 0 / 35%);
+  transition: box-shadow 0.1s ease;
+
+}
+
+.card:hover,
+.card:focus {
+  opacity: 0.7;
+}
+
+
+/*CTA*/
+
+.project-cta h2{
+  font-size: clamp(2rem, 1.9600rem + 0.2000vw, 2.2rem);
   
 }
