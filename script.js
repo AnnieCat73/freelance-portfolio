@@ -1,4 +1,4 @@
-//Navigation for mobile and tablet
+//NAVIGATION FOR TABLET AND MOBILE
 
 const closeBtn = document.querySelector(".close-nav");
 const openBtn = document.querySelector(".open-nav");
@@ -42,7 +42,7 @@ contactLink.addEventListener("click", () => {
 
 
 
-///Animation for each section while scrolling down the page
+//ANIMATION FOR EACH SECTION WHILE SCROLLING DOWN THE PAGE
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
 
@@ -62,7 +62,6 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 reveal();
 
-/////
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     //console.log(entry)
@@ -72,21 +71,18 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.remove('show');
     }
   });
-})
+});
 
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
-////
-//Form validation in Contact Section
+//FORM VALIDATION IN CONTACT SECTION
 const form = document.querySelector("form[name='contact-form']");
 const nameInput = document.querySelector("input[name='name']");
 const emailInput = document.querySelector("input[name='email']");
 
 const messageInput = document.querySelector("textarea[name='message']");
 const thankYou = document.querySelector(".thank-you");
-
-//console.log(form);
 
 nameInput.isValid = () => !!nameInput.value;
 emailInput.isValid = () => isValidEmail(emailInput.value);
@@ -99,11 +95,6 @@ const isValidEmail = (email) => {
   const re =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
-};
-
-const isValidPhone = (phone) => {
-  const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
-  return re.test(String(phone).toLowerCase());
 };
 
 let isFormValid = false;
