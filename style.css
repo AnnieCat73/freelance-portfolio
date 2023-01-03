@@ -343,7 +343,6 @@ section:last-of-type {
 .hidden {
   opacity: 0;
   transition: all 1s;
-  filter: blur(1);
   transform: translateX(-50%);/*can also do -100px*/
 }
 
@@ -498,7 +497,7 @@ header .nav-large {
   color: var(--clr-neutral-100);
   font-size: var(--fs-400);
   text-transform: capitalize;
-  letter-spacing: 5%;
+  letter-spacing: 0.03em;
 }
 
 .nav-large .nav-btn {
@@ -1695,7 +1694,6 @@ textarea {
   content: "";
   position: absolute;
   border-style: none;
-  border-width: none;
 }
 
 .faq-drawer-content p {
