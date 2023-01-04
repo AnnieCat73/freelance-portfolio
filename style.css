@@ -950,26 +950,26 @@ figure .hero-img {
 }
 
 .service-seo {
-  background-image: url(images/SEO.svg);
+  background-image: url(images/seo.svg);
   width: 2.5rem;
   height: 2rem;
   opacity: 0.8;
 }
 
 .service-design {
-  background-image: url(images/Pen.svg);
+  background-image: url(images/pen.svg);
   width: 2.5rem;
   height: 2.5rem;
 }
 
 .service-webflow {
-  background-image: url(images/Webflow.svg);
+  background-image: url(images/webflow.svg);
   width: 2.5rem;
   height: 1.731rem;
 }
 
 .service-development {
-  background-image: url(images/Computer.svg);
+  background-image: url(images/computer.svg);
   width: 2.75rem;
   height: 2.25rem;
 }
