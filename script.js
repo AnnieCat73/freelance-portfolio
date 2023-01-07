@@ -41,7 +41,6 @@ contactLink.addEventListener("click", () => {
 });
 
 
-
 //ANIMATION FOR EACH SECTION WHILE SCROLLING DOWN THE PAGE
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
