@@ -231,6 +231,10 @@ section:last-of-type {
   margin-top: 3rem;/*48px*/
 }
 
+.flow-content-medium > * + * { 
+  margin-top: 1.5rem;/*32px*/
+}
+
 .flow-content-small > * + * { 
   margin-top: 1rem;/*32px*/
 }
@@ -265,6 +269,10 @@ section:last-of-type {
   }
   .flow-content-large > * + * { 
     margin-top: 3.5rem;/*56px*/
+  }
+
+  .flow-content-medium > * + * { 
+    margin-top: 2rem;/*32px*/
   }
   
   .main-container {

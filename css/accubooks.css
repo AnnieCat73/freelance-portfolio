@@ -99,9 +99,7 @@
 /*AccuBooks-why*/
 .accubooks-why {
   gap: 2rem;
-  
 }
-
 
 .accubooks-why-img {
   width: 10rem;
@@ -147,3 +145,214 @@
     max-width: 50ch;
   }
 }
+
+/*AccuBooks RESEARCH*/
+
+.research-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 40em) {
+  .research-content {
+    max-width: 55ch;
+  }
+
+  .accubooks-research {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 62em) {
+  .research-content {
+    max-width: unset;
+    margin: unset;
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 70em) {
+  .research-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+
+/*PERSONA*/
+
+.persona-checks,
+.persona-cross {
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.persona-checks li,
+.persona-cross li {
+  gap: 1rem;
+}
+
+.persona-checks li .bi {
+  color: #10954e;
+  align-self: flex-start;
+}
+
+.persona-cross li .bi {
+  color: var(--clr-hover-secondary);
+}
+
+/*Persona card*/
+.persona-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 2.5rem;
+  overflow-x: auto
+}
+
+.persona-grid > * { 
+  min-width: 0; 
+}
+
+.persona-card .info-label {
+  margin-bottom: 1rem;
+}
+
+.persona-img {
+  background-image: url(/images/persona.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  min-height: 20rem;
+  max-width: 100%;
+  position: relative;
+}
+
+.persona-img figcaption {
+  border-radius: 2px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 5px;
+  left: 5px;
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-300);
+  opacity: 0.7;
+  padding: .3rem;
+}
+
+.persona figcaption span {
+  font-size: var(--fs-200);
+  font-style: italic;
+  opacity: 0.9;;
+}
+
+.persona .persona-card-content {
+  border-radius: 4px;
+  background-color: var(--clr-neutral-100);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+}
+
+.persona-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: var(--fw-600);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 35em) {
+  .persona-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .persona-img {
+    grid-column: 1/3;
+    min-height: 25rem;;
+  }
+
+  .goals {
+    grid-column: 1 / -1;
+  }
+
+  .cross {
+    grid-column: 1 / -1;
+  }
+
+  .persona-card {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 48em) {
+  .persona-info {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .persona-grid {
+    gap: 3.5rem;
+  }
+
+  .goals,
+  .cross {
+    grid-column: 1 / 4;
+  }
+}
+
+@media (min-width: 72em) {
+  .persona-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+ 
+  .goals {
+    grid-column: 1 /2 ;
+  }
+  .cross {
+    grid-column: 2 /4 ;
+  }
+}
+
+@media (min-width: 74em) {
+  .persona > p {
+    max-width: 55ch;
+  }
+
+  .persona-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 24rem 24rem;
+    grid-template-areas: 
+    "persona-img goals cross"
+    "persona-img persona-card persona-card";
+    gap: 1.5rem;
+  }
+
+  .persona-img {
+    grid-area: persona-img;
+    min-height: 12rem;
+    background-position: center center;
+  }
+ 
+  .goals {
+    grid-area: goals;
+    align-self: center;
+  }
+  .cross {
+    grid-area: cross;
+    align-self: center;
+  }
+
+  .persona-card {
+    grid-area: persona-card;
+    align-self: center;
+    margin-top: -5rem;
+  }
+}
+
