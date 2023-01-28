@@ -241,13 +241,14 @@
   color: var(--clr-neutral-100);
   background-color: var(--clr-neutral-300);
   opacity: 0.7;
-  padding: .3rem;
+  padding: .3rem 1rem;
 }
 
 .persona figcaption span {
   font-size: var(--fs-200);
   font-style: italic;
-  opacity: 0.9;;
+  opacity: 0.9;
+  margin-top: -5px;
 }
 
 .persona .persona-card-content {
