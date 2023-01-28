@@ -512,7 +512,6 @@
 
 .orange-original {
   background-color: #FF884C;
- 
 }
 
 .blue-original {
@@ -614,3 +613,13 @@
     max-width: 35ch;
   }
 }
+
+/*RESULTS*/
+
+.accubooks-results a {
+  color: #043f82;
+  text-decoration: underline;
+}
+
+
+
