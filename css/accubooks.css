@@ -152,7 +152,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 40em) {
@@ -169,7 +169,7 @@
   .research-content {
     max-width: unset;
     margin: unset;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
 
@@ -357,3 +357,20 @@
   }
 }
 
+
+/*SITEMAP*/
+
+.sitemap-headings {
+  max-width: 73ch;
+}
+
+.sitemap .info-label {
+  margin: 2rem 0 1rem 0;
+}
+
+@media (min-width: 62em) {
+  .sitemap .info-label {
+    margin: 2.5rem 0 1rem 0;
+  }
+  
+}
