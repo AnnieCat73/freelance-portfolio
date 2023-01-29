@@ -1,5 +1,19 @@
 /*General Styles*/
 
+body::-webkit-scrollbar{
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+ 
+}
+
+.info-label {
+  font-size: var(--fs-200);
+  opacity: 0.8;
+  font-style: italic;
+}
+
+
+
 /*Spacing*/
 
 .m-top {
@@ -90,11 +104,6 @@
   margin-top: 1rem;
 }
 
-.info-label {
-  font-size: var(--fs-200);
-  opacity: 0.8;
-  font-style: italic;
-}
 
 /*AccuBooks-why*/
 .accubooks-why {
@@ -614,6 +623,7 @@
   }
 }
 
+
 /*RESULTS*/
 
 .accubooks-results a {
@@ -621,5 +631,29 @@
   text-decoration: underline;
 }
 
+
+/*CTAs*/
+
+.accubooks-project-cta .cta-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+  margin-left: 0;
+}
+
+.accubooks-project-cta .other, 
+.accubooks-project-cta .cta-headings {
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+@media (min-width: 80em) {
+  .accubooks-project-cta .cta-container {
+    
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
 
 
