@@ -635,25 +635,13 @@ body::-webkit-scrollbar{
 /*CTAs*/
 
 .accubooks-project-cta .cta-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 4rem;
-  align-items: flex-start;
+ align-items: flex-start;
+}
+
+
+.accubooks-project-cta .btn-large {
   margin-left: 0;
 }
 
-.accubooks-project-cta .other, 
-.accubooks-project-cta .cta-headings {
-  align-items: flex-start;
-  gap: 2rem;
-}
-
-@media (min-width: 80em) {
-  .accubooks-project-cta .cta-container {
-    
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-}
 
 
