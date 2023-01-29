@@ -118,9 +118,7 @@ body {
 }
 
 /*hiding scrollbar in chrome*/
-body::-webkit-scrollbar{
-  display: none;
-}
+                 
 
 a {
   text-decoration: none;

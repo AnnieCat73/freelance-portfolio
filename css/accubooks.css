@@ -1,10 +1,6 @@
 /*General Styles*/
 
-body::-webkit-scrollbar{
-  width: 0px;
-  background: transparent; /* make scrollbar transparent */
- 
-}
+
 
 .info-label {
   font-size: var(--fs-200);
@@ -83,7 +79,7 @@ body::-webkit-scrollbar{
 }
 
 .info-link {
-  color: #ffbbd0;
+  color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.4);
   background-color: var(--clr-accent-300);
   padding: 0.65em 1em;
