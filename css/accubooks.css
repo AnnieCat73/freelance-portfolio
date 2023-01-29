@@ -100,7 +100,6 @@
   margin-top: 1rem;
 }
 
-
 /*AccuBooks-why*/
 .accubooks-why {
   gap: 2rem;
@@ -259,7 +258,7 @@
 .persona .persona-card-content {
   border-radius: 4px;
   background-color: var(--clr-neutral-100);
-  box-shadow: var(--box-shadow);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
   padding: 1.5rem;
 }
 
@@ -392,13 +391,26 @@
   overflow-x: auto
 }
 
+.ui-design .design-headings {
+  margin-bottom: 1.5rem;
+}
+
 .ui-design p,
 .ui-design .design-headings p {
   max-width: 72ch;
 }
 
+.ui-design .brand-list:nth-of-type(1) {
+  padding-top: 1rem;
+}
+
+.ui-design .brand-list:nth-of-type(2) {
+  padding-bottom: 1rem;
+}
+
 .ui-design .alphabet {
   font-weight: var(--fw-700);
+  padding: 1rem 0;
 }
 
 .ui-design .brand-list {
@@ -417,7 +429,7 @@
 .ui-design .color-palette {
   flex-wrap: wrap;
   gap: 3rem;
-  margin: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .ui-design .circle,
@@ -468,10 +480,18 @@
   margin-bottom: 1.5rem;
 }
 
+.design-examples {
+  margin-top: 2.5rem;
+}
+
 @media (min-width: 48em) {
   .designs-container {
     display: grid;
     gap: 2rem;
+  }
+
+  .ui-design .design-headings {
+    margin-bottom: 2.5rem;
   }
   
   .ui-design .imagery-content {
@@ -481,6 +501,10 @@
 
   .ui-design .brand-list {
     gap: 3rem;
+  }
+
+  .design-examples {
+    margin-top: 3.5rem;
   }
 }
 
