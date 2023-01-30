@@ -179,6 +179,10 @@
 
 /*PERSONA*/
 
+.persona-headings p {
+  margin-bottom: 2rem;
+}
+
 .persona-checks,
 .persona-cross {
   gap: 1rem;
@@ -190,7 +194,8 @@
   gap: 1rem;
 }
 
-.persona-checks li .bi {
+.persona-checks li .bi,
+.persona-cross li .bi {
   color: #10954e;
   align-self: flex-start;
 }
@@ -205,7 +210,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto;
   column-gap: 2.5rem;
-  row-gap: 1rem;
+  row-gap: 2.5rem;
   overflow-x: auto
 }
 
@@ -217,8 +222,12 @@
   margin-bottom: 1rem;
 }
 
+.persona-img-wrapper {
+  justify-self: center;
+}
+
 .persona-img-wrapper img {
-  width: 100%;
+  /*width: 100%;*/
   height: auto;
 }
 
@@ -256,7 +265,7 @@
   margin-bottom: 1rem;
 }
 
-@media (min-width: 35em) {
+@media (min-width: 30em) {
   .persona-grid {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
@@ -284,25 +293,35 @@
   }
 }
 
+@media (min-width: 30em) and (max-width: 35em) {
+  .persona-img-wrapper  {
+    align-self: center;
+  }
+}
+
+@media (min-width: 40em) and (max-width: 44.9em) {
+  .persona-card {
+    margin-top: 1.5rem;
+  }
+}
+
 @media (min-width: 40em) and (max-width: 87.9em) {
   .persona-grid {
     row-gap: 1rem;
     column-gap: 1.5rem;
   }
   .goals {
-    
     align-self: end;
   }
 
   .cross {
-    
     align-self: start;
   }
 }
 
 @media (min-width: 45em) {
   .persona-grid {
-    row-gap: 3rem;
+    row-gap: 2.5rem;
   }
 }
 
@@ -323,8 +342,6 @@
   }
 }
 
-
-
 @media (min-width: 62em) {
   .persona-grid {
     row-gap: 1rem;
@@ -338,13 +355,12 @@
 
 @media (min-width: 62em) and (max-width: 64em) {
   .persona-img-wrapper {
-    
     align-self: center;
   }
 }
 
 @media (min-width: 64em)  {
-  .person-grid {
+  .persona-grid {
     row-gap: 3rem;
   }
 }
@@ -356,7 +372,7 @@
   }
 }
 
-@media (min-width: 88em) {
+@media (min-width: 87em) {
   .persona > p {
     max-width: 55ch;
   }
@@ -420,6 +436,9 @@
 
 /*WIREFRAMES*/
 
+.wireframes-headings {
+  max-width: 72ch;
+}
 
 /*UI DESIGN*/
 
