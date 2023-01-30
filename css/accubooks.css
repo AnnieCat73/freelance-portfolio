@@ -112,7 +112,7 @@
   }
 
   .accubooks-why-content  {
-    max-width: 30ch;
+    max-width: 28ch;
   }
 }
 
@@ -120,6 +120,12 @@
   .accubooks-why {
     flex-direction: row;
     justify-content: center;
+  }
+}
+
+@media (min-width: 57em) and (max-width: 61.9em) {
+  .accubooks-why-content  {
+    max-width: 50ch;
   }
 }
 
