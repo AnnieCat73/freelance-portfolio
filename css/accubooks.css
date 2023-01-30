@@ -204,7 +204,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto;
-  gap: 2.5rem;
+  column-gap: 2.5rem;
+  row-gap: 1rem;
   overflow-x: auto
 }
 
@@ -218,6 +219,7 @@
 
 .persona-img-wrapper img {
   width: 100%;
+  height: auto;
 }
 
 .persona-img-wrapper figcaption {
@@ -282,9 +284,29 @@
   }
 }
 
-@media (min-width: 48em) {
-  
+@media (min-width: 40em) and (max-width: 87.9em) {
+  .persona-grid {
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+  }
+  .goals {
+    
+    align-self: end;
+  }
 
+  .cross {
+    
+    align-self: start;
+  }
+}
+
+@media (min-width: 45em) {
+  .persona-grid {
+    row-gap: 3rem;
+  }
+}
+
+@media (min-width: 48em) {
   .persona-info {
     flex-direction: row;
     gap: 3rem;
@@ -293,19 +315,19 @@
   .goals {
     grid-column: 2 / -1;
     grid-row: 1 /2;
-    align-self: center;
   }
 
   .cross {
     grid-column: 2 / -1;
     grid-row: 2 / 3;
-    align-self: center;
   }
 }
 
+
+
 @media (min-width: 62em) {
   .persona-grid {
-    gap: 0.8rem;
+    row-gap: 1rem;
   }
 
   .goals,
@@ -314,10 +336,23 @@
   }
 }
 
+@media (min-width: 62em) and (max-width: 64em) {
+  .persona-img-wrapper {
+    
+    align-self: center;
+  }
+}
+
+@media (min-width: 64em)  {
+  .person-grid {
+    row-gap: 3rem;
+  }
+}
+
 @media (min-width: 72em) {
   .persona-grid {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    row-gap: 3rem;
   }
 }
 
