@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="css/style.css" >
     <link rel="stylesheet" href="css/accubooks.css">
     
-    
   </head>
   <body>
     <header class="header">
@@ -229,12 +228,18 @@
                   </li>
                 </ul>
               </div>
-              <div class="persona-img">
+              <figure class="persona-img-wrapper">
+                <img src="images/persona-img@1x.jpg" 
+                      srcset="images/persona-img@1x.jpg 257w,
+                              images/persona-img@2x.jpg 514w,
+                              images/persona-img@3x.jpg 771w"
+                              sizes="(max-width: 48em) 70vw, 100vw,
+                              (min-width: 62em) 25vw, 100vw"
+                      alt="Persona">
                 <figcaption>Samantha Jones
                   <span>Restaurant owner</span>
                 </figcaption>
-              </div>
-              
+              </figure>
               <div class="persona-card">
                 <p class="info-label">About Samantha</p>
                 <div class="persona-card-content">
@@ -337,12 +342,12 @@
                   <p>As this is  a template the users will add their own images. I added suitable imagery from pexels.co for the live preview only.</p>
                   <figure class="imagery-img-wrapper">
                     <img src="images/service-business@1x.jpg" 
-                          srcset="images/service-business@1x.jpg 256w,
-                                  images/service-business@2x.jpg 512w,
-                                  images/service-business@3x.jpg 768w"
-                          sizes="(min-width: 40em) 50vw, 100vw,
-                                  (min-width: 62em) 33vw, 100vw"
-                          alt="Woman smiling whilst sitting behind her laptop">
+                      srcset="images/service-business@1x.jpg 256w,
+                              images/service-business@2x.jpg 512w,
+                              images/service-business@3x.jpg 768w"
+                      sizes="(min-width: 48em) 50vw,
+                            (min-width: 62em) 33vw"
+                      alt="Woman smiling whilst sitting behind her laptop">
                   </figure>
                 </div>
               </div>
