@@ -255,19 +255,24 @@
 @media (min-width: 35em) {
   .persona-grid {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto;
   }
 
   .persona-img-wrapper  {
     grid-column: 1 / 2;
+    grid-row: 1 /3;
   }
   
   .goals {
-    grid-column: 1 / -1;
+    grid-column: 2 / -1;
+    grid-row: 1 /2;
+    align-self: center;
   }
 
   .cross {
-    grid-column: 1 / -1;
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+    align-self: center;
   }
 
   .persona-card {
@@ -276,37 +281,41 @@
 }
 
 @media (min-width: 48em) {
+  
+
   .persona-info {
     flex-direction: row;
     gap: 3rem;
   }
-  .persona-img-wrapper  {
-    grid-column: 1 / 2;
+  
+  .goals {
+    grid-column: 2 / -1;
+    grid-row: 1 /2;
+    align-self: center;
+  }
+
+  .cross {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+    align-self: center;
   }
 }
 
 @media (min-width: 62em) {
   .persona-grid {
-    gap: 3.5rem;
+    gap: 0.8rem;
   }
 
   .goals,
   .cross {
-    grid-column: 1 / 4;
+    grid-column: 2 / -1;
   }
 }
 
 @media (min-width: 72em) {
   .persona-grid {
     grid-template-columns: 1fr 1fr 1fr;
-  }
- 
-  .goals {
-    grid-column: 1 /4 ;
-  }
-
-  .cross {
-    grid-column: 1 /4 ;
+    gap: 1rem;
   }
 }
 
