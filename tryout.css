@@ -1531,10 +1531,7 @@ input[type="checkbox"] {
   }
 }
 
-
-
-
-/*CONTACT*/
+/*CONTACT*
 
 .contact {
   display: grid;
@@ -1565,18 +1562,18 @@ input[type="checkbox"] {
   display: flex;
   gap: 1em;
 }
+
 .contact-method:nth-of-type(1) {
-  
   gap: 1.4em;
 }
 
-/*form*/
+/*form*
+
 .form-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3em;
 }
-/*form*/
 
 .contact form {
   display: grid;
@@ -1588,19 +1585,16 @@ input[type="checkbox"] {
   gap: 0.4em;
 }
 
-.invalid {
-  border: 1px solid var(--clr-hover-primary);
+.contact .invalid {
+  border: 1px solid var(--clr-hover-secondary);
 }
-
 
 .contact input,
 .contact textarea { 
-  
- 
-  border: 1px solid rgba(39, 38, 38, 0.1);
+  border: 1px solid rgba(39, 38, 38, 0.2);
   border-radius: 4px;
   width: 100%;
-  padding: 0.8125em 0.75em 0.75em 0.75em;
+  padding: 0.8125em 0.75em 0.75em 1em;
   font-size: var(--fs-400);
   outline: none;
   color: var(--clr-neutral-300);
@@ -1608,20 +1602,22 @@ input[type="checkbox"] {
 
 .contact input:focus,
 .contact textarea:focus {
-  outline: none;
+  outline-color: transparent;
+  box-shadow: 0 0 0 1px rgba(38,31,32, 0.7);
+  background-color:rgba(38,31,32, 0.1);
 }
 
 .contact input::placeholder,
 textarea::placeholder {
  font-size: var(--fs-400);
+ font-weight: var(--fw-700);
+ font-style: italic;
 }
-
-
 
 .error {
   color: var(--clr-hover-secondary);
   font-size: var(--fs-100);
-  font-weight: var(--fw-600);
+  font-weight: var(--fw-700);
   margin-top: 0.375em;
   letter-spacing: 0.02em;
 }
@@ -1629,7 +1625,7 @@ textarea::placeholder {
 .contact label {
   display: block;
   font-size: var(--fs-200);
-  margin-bottom: 0.375em;
+  margin-bottom: 0.4em; /*0.375em;*
   opacity: 0.8;
 }
 
@@ -1642,39 +1638,35 @@ textarea {
   width: 100%;
   border-radius: 4px;
   outline: none;
- 
-  
-  /*height: 200px;*/
   font-size: var(--fs-400);
   resize: none;
 }
 
-
 .submit-btn {
   background-color: var(--clr-accent-300);
+  cursor: pointer;
   color: var(--clr-neutral-100);
   border: 0;
+  border-radius: 4px;
   line-height: 1.125;
-  padding: 0.8em 1.5em;/*CAN CHANGE IT TO MATCH BNTS UP*/
+  padding: 0.875em 1.875em;
   justify-self: start;
+  text-transform: uppercase;
+  transition: all ease-in-out .3s;
 }
-
 
 .submit-btn:hover,
 .submit-btn:focus {
   background-color: var(--clr-hover-primary);
-  
 }
-
 
 .thank-you {
   color: var(--clr-accent-300);
   padding: 3em 0;
-  font-size: var(--fs-600);
+  font-size: var(--fs-500);
   font-weight: var(--fw-700);
   text-align: center;
 }
-
 
 @media (min-width: 36em) {
   .contact {
@@ -1693,7 +1685,6 @@ textarea {
     gap: 6em;
   }
   
-
   .contact-text{
     flex-basis: 45%;
    }
@@ -1709,6 +1700,7 @@ textarea {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
   }
+
   .contact form {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, min-content);
@@ -1719,10 +1711,12 @@ textarea {
     grid-column: 1;
     grid-row: 1 / 2;
   }
+
   .form-control:nth-of-type(2) {
     grid-column: 2;
     grid-row: 1 / 2;
   }
+
   .form-control:nth-of-type(3) {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
@@ -1732,22 +1726,26 @@ textarea {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
   }
-
-  
-  
 }
-
-
 
 
 @media (min-width: 62em) {
   .contact {
     gap: 5em;
   }
+
   .contact-content {
     gap: 4em;
   }
+
+  .thank-you {
+    padding: 3em 4em 0 0;
+  }
 }
+*/
+
+
+
 /*FOOTER*/
 
 

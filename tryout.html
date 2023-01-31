@@ -635,16 +635,21 @@
             </div>
           </section>
           <div class="divider"></div>
-          <!--Contact-->
-          <section class="contact">
+          <!--Contact
+          
+          NB Try to connect the form of netlify with this but if doesn't work, delete the js and just use required. See html and styling from PMB site. If needs to be better find someone to help out-->
+          <section class="contact reveal" id="contact">
             <div class="section-headings">
               <p class="section-subtitle">let's work together</p>
-              <h2 class="heading-underline">My Contact Details</h2>
+             <div class="heading-wrapper">
+                <h2>My Contact Details</h2>
+                <div class="underline hidden"></div>
+              </div>
             </div>
             <div class="contact-content">
               <div class="contact-top split-column">
                 <div class="contact-text flow-content-small">
-                  <p class="large-text">Need a High-Converting Website?</p>
+                  <p class="large-text">Have a specific question?</p>
                   <p>
                     Feel free to send me a message or give me a call and I will
                     get back to you.
@@ -652,11 +657,11 @@
                 </div>
                 <div class="contact-options">
                   <div class="contact-method">
-                    <img src="images/phone.svg" alt="Phone number" />
+                    <img src="images/phone.svg" alt="Phone number" >
                     <p>+44(0)7962 344 427</p>
                   </div>
                   <div class="contact-method">
-                    <img src="images/email.svg" alt="Email address" />
+                    <img src="images/email.svg" alt="Email address" >
                     <p>devannie777@gmail.com</p>
                   </div>
                 </div>
@@ -665,16 +670,14 @@
                 <form name="contact-form">
                   <div class="form-control">
                     <label>Full Name</label>
-                    <input name="name" placeholder="First and Last Name" />
+                    <input name="name" placeholder="First and Last Name" >
                     <div class="error hide">Name is required</div>
                   </div>
-
                   <div class="form-control">
                     <label>Email</label>
-                    <input name="email" placeholder="example@domain.com" />
+                    <input name="email" placeholder="example@domain.com" >
                     <div class="error hide">Email is invalid</div>
                   </div>
-
                   <div class="form-control">
                     <label>Message</label>
                     <textarea
@@ -684,8 +687,7 @@
                     ></textarea>
                     <div class="error hide">Message is required</div>
                   </div>
-
-                  <button class="submit-btn btn" type="submit">
+                  <button class="submit-btn" type="submit">
                     Get Started
                   </button>
                 </form>
