@@ -136,6 +136,7 @@ h1 {
   font-size: clamp(2.3rem, 2.1200rem + 0.9000vw, 3.2rem);
   font-weight: var(--fw-700);
   max-width: 28ch;
+  text-transform: capitalize;
 }
 
 h2 {
@@ -958,29 +959,9 @@ figure .hero-img {
   box-shadow: 0px 4px 16px -4px rgba(0, 0, 0, 0.25);
 }
 
-.service-seo {
-  background-image: url(images/seo.svg);
-  width: 2.5rem;
-  height: 2rem;
-  opacity: 0.8;
-}
-
-.service-design {
-  background-image: url(images/pen.svg);
+.services-icon {
   width: 2.5rem;
   height: 2.5rem;
-}
-
-.service-webflow {
-  background-image: url(images/webflow.svg);
-  width: 2.5rem;
-  height: 1.731rem;
-}
-
-.service-development {
-  background-image: url(images/computer.svg);
-  width: 2.75rem;
-  height: 2.25rem;
 }
 
 .service h3 {
@@ -989,6 +970,10 @@ figure .hero-img {
 
 .service p {
   text-align: center;
+}
+
+.phase-headings .process-label {
+  margin-bottom: 0.2rem;
 }
 
 @media (min-width: 36em) {
