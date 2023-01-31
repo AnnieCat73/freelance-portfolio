@@ -1405,7 +1405,7 @@ figure .hero-img {
 }
 
 
-/*CONTACT*/
+/*CONTACT*
 
 .contact {
   display: grid;
@@ -1441,7 +1441,7 @@ figure .hero-img {
   gap: 1.4em;
 }
 
-/*form*/
+/*form*
 
 .form-container {
   display: grid;
@@ -1499,7 +1499,7 @@ textarea::placeholder {
 .contact label {
   display: block;
   font-size: var(--fs-200);
-  margin-bottom: 0.4em; /*0.375em;*/
+  margin-bottom: 0.4em; /*0.375em;*
   opacity: 0.8;
 }
 
@@ -1616,7 +1616,7 @@ textarea {
     padding: 3em 4em 0 0;
   }
 }
-
+*/
 
 /*FAQ*/
 
