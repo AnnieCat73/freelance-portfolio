@@ -142,6 +142,7 @@ h1 {
 h2 {
   font-size: clamp(2rem, 1.9600rem + 0.2000vw, 2.2rem);
   font-weight: var(--fw-700);
+  text-transform: capitalize;
 }
 
 h3 { 
@@ -184,7 +185,7 @@ h3 {
   border: 1px solid rgba(0, 0, 0, 0.4);
   color: var(--clr-neutral-100);
   background-color: var(--clr-accent-300);
-  padding: 0.875em 1.875em;
+  padding: 0.975em 1.875em;
   margin-right: auto;
   transition: all ease-in-out .3s;
 }
@@ -199,7 +200,7 @@ h3 {
   background-color: transparent;
   border: 1px solid var(--clr-secondary-btn);
   margin-right: auto;
-  padding: 0.875em 1.62em;/*10px 30px*/
+  padding: 0.975em 1.62em;/*10px 30px*/
   transition: all ease-in-out .5s;
 }
 
@@ -810,7 +811,7 @@ figure .hero-img {
 .hero-btns {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1rem;
   grid-column: 1;
   grid-row: 3 / 4;
   justify-self: center;
@@ -876,6 +877,10 @@ figure .hero-img {
 
   .divider {
     display: none;
+  }
+
+  .hero-btns {
+    margin-top: 0.5rem;
   }
 }
 
