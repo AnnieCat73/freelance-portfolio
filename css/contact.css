@@ -141,9 +141,14 @@ Create Access Key here 👉 https://web3forms.com/
   text-transform: unset;
 }
 
-.contact-method {
+.contact-method,
+.contact-method a {
   display: flex;
   gap: 1rem;
+}
+
+.contact-method address {
+  color: var(--clr-neutral-300);
 }
 
 .contact-method:nth-of-type(1) {

@@ -1672,7 +1672,7 @@ footer {
 
 .web-dev .section-headings,
 .email .section-headings {
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
 .web-dev {
@@ -1684,9 +1684,28 @@ footer {
   align-items: flex-start;
 }
 
+.web-dev .portfolio-container,
+.email .portfolio-container {
+  gap: 3.5rem;
+}
+
+@media (min-width: 48em) {
+  .web-dev .portfolio-container,
+  .email .portfolio-container {
+    gap: 4rem;
+  }
+
+}
+
+
 @media (min-width: 75em) {
   .heading-web h2 {
     margin-top: -3rem;
+  }
+
+  .web-dev .portfolio-container,
+  .email .portfolio-container {
+    gap: 4.5rem;
   }
 }
 
