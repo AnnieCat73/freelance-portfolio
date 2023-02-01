@@ -164,8 +164,16 @@ h3 {
 }
 
 .large-text {
-  font-size: var(--fs-500);
-  font-weight: var(--fw-600);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-500);
+  
+}
+
+@media (min-width: 25em) {
+  .large-text {
+    font-size: var(--fs-500);
+    font-weight: var(--fw-600);
+  }
 }
 
 .btn {
@@ -355,6 +363,10 @@ section:last-of-type {
 .project-hero .section-heading {
   justify-content: flex-start;
   gap: 0.9em;
+}
+
+.project-hero .hero-subheading {
+  display: block;
 }
 
 .project-hero a {
