@@ -1,183 +1,16 @@
-:root {
-  --ff-sans: "Public Sans", sans-serif;
-  --ff-serif: "DM Serif Display", serif;
-
-  /* small screen font-sizes */
-
-  --fs-100: 0.875rem;
-  --fs-200: 0.938rem;
-  --fs-300: 1rem;
-  --fs-400: 1.063rem;
-  --fs-500: 1.125rem;
-  --fs-copy: 0.875rem;
-  --fs-btn: 1.0875rem;
-  
-
-  --fw-100: 100;
-  --fw-400: 400;
-  --fw-500: 500; 
-  --fw-600: 600;
-  --fw-700: 700;
-
-  --clr-neutral-100: #ffffff;
-  --clr-neutral-300: #261f20;
-  --clr-neutral-500:  #2d2d2d;
-  
-  --clr-bg-aside: #261f20;
-  --clr--bg-100: #f7f7f7;
-  --clr-accent-300: #9e2e4a;
-  --clr-secondary-btn: #060000;
-  --clr-hover-primary: #67142a;
-  --clr-hover-secondary: #d61a24;
-}
-
-/*tablet*/
-@media (min-width: 36em) {
-  :root {
-    --fs-copy: 0.938;
-  }
-}
-
-/*desktop*/
-@media (min-width: 62em) {
-  :root {
-    --fs-500: 1.17rem;
-    --fs-btn: 1.063rem;
-  }
-}
-
-
-/* reset */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font: inherit;
-}
-
-h1,
-.h1,
-h2,
-.h2 {
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-}
-
-html {
-  color-scheme: dark light;
-  scrollbar-width: none;/*for firefox*/
-  scroll-behavior: smooth;
-}
-
-body,
-h1,
-h2,
-h3,
-p,
-dl,
-dd,
-figure {
-  margin: 0;
-}
-
-ul,
-ol,
-ul[class],
-ol[class] {
-  list-style: none;
-  padding: 0;
-}
-
-img,
-picture,
-svg,
-video {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-body {
-  background-color: #f7f7f7;
-  color: var(--clr-neutral-300);
-  line-height: 1.5;
-  font-family: var(--ff-sans);
-  font-size: var(--fs-400);
-}
-
-/*hiding scrollbar in chrome*/
-body::-webkit-scrollbar{
-  display: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-h4 {
-  color: var(--clr-accent-300);
-  font-size: var(--fs-100);
-  font-weight: var(--fw-600);
-  letter-spacing: 0.04em;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.divider:nth-of-type(1) {
-  display: block;
-}
-
-@media (min-width: 62em) {
-  main {
-    margin-top: 15rem;
-  }
-}
+/*PARISH PAGE*/
 
 
 /*HERO*/
-
-.parish-hero {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  gap: 2.5em;
-}
-
-.parish-hero .section-heading {
-  justify-content: flex-start;
-  gap: 0.8em;
-}
-.parish-hero a {
-  transition: all ease-in-out .5s;
-}
-
-.parish-hero a:hover {
-  opacity: 0.7;
-}
-
-.parish-hero-img {
-  height: auto;
-  width: 100%;
-  object-fit: cover;
-  box-shadow: 0 10px 40px -10px rgb(0 0 0 / 45%);
-}
 
 .project-info {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
+}
+.project-info h4{
+  opacity: 0.8;
+  font-style: italic;
 }
 
 .area h4,
@@ -199,7 +32,7 @@ h4 {
 }
 
 @media (min-width: 50em) {
-  .parish-hero-img {
+  .project-hero-img {
     height: auto;
   }
 }

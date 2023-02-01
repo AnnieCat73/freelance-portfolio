@@ -343,6 +343,36 @@ section:last-of-type {
   opacity: 0.2;
 }
 
+/*same styles for project/case study pages*/
+
+.project-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 2.5em;
+}
+
+.project-hero .section-heading {
+  justify-content: flex-start;
+  gap: 0.9em;
+}
+
+.project-hero a {
+  transition: all ease-in-out .5s;
+}
+
+.project-hero a:hover,
+.project-hero a:focus {
+  opacity: 0.7;
+}
+
+.project-hero-img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 10px 40px -10px rgb(0 0 0 / 45%);
+}
+
 /*scroll animation for each section*/
 
 .reveal {
