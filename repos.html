@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Freelance web-designer and developer based in London, UK. I design & build custom website solutions that help your business grow. I help you increase conversion and performance in every possible way.">
+    <title>Repos | Annie Indreiten | Freelance web-designer and front-end developer | London, UK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@100;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    >
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/repos.css" >
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-mobile-container">
+        <div class="nav-mobile split">
+          <div class="nav-left split">
+            <a href="index.html" class="logo">annies designs</a>
+            <p class="nav-text">Designer & Developer</p>
+          </div>
+          <!--Hamburger for mobile-->
+          <button aria-label="Open navigation" class="open-nav">&#9776;</button>
+        </div>
+        <nav class="menu-nav-mobile">
+          <button aria-label="Close navigation" class="close-nav">
+            &times;
+          </button>
+          <ul class="list-inside">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li id="js-about">
+              <a href="index.html#about" class="nav-link">About</a>
+            </li>
+            <li id="js-services"><a href="index.html#services" class="nav-link">Services</a></li>
+            <li id="js-work"><a href="index.html#work" class="nav-link">Work</a></li>
+            <li id="js-contact"><a href="index.html#contact" class="inside-btn btn">Connect</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--Nav on larger screens-->
+      <nav class="nav-large">
+        <a href="index.html" class="logo">annies designs</a>
+        <ul>
+          <li>
+            <a href="index.html#services" class="nav-item">Services</a>
+          </li>
+          <li>
+            <a href="index.html#work" class="nav-item">Work</a>
+          </li>
+          <li>
+            <a href="index.html#about" class="nav-item">About</a>
+          </li>
+          <li>
+            <a href="index.html#contact" class="nav-btn">Connect</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main-container">
+      <!--aside-->
+      <aside>
+        <div class="sidebar split-column">
+          <a class="logo-sidebar" href="index.html">annies<span>designs</span> </a>
+          <figure>
+            <img
+              src="images/img-hero.jpg"
+              srcset="images/img-hero.jpg,
+              images/img-hero@2x.jpg 2x,
+              images/img-hero@3x.jpg 3x"
+              alt="Annie Indreiten"
+              class="sidebar-img"
+            >
+          </figure>
+          <div class="sidebar-content split-column">
+            <p>Web designer, front-end and Webflow developer</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/annieindreitendeveloper/"
+              target="_blank"
+              rel="noreferrer"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/AnnieCat73"
+              target="_blank"
+              rel="noreferrer"
+              ><i class="bi bi-github"></i></a>
+              <a href="https://twitter.com/annie_indreiten/" 
+              target="_blank"
+              rel="noreferrer"><i class="bi bi-twitter"></i></a>
+            </div>
+            <a href="index.html#contact" class="sidebar-cta">Get In Touch</a>
+          </div>
+        </div>
+      </aside>
+      <!--main-->
+      <main>
+        <div class="content-container">
+          <!--Projects-heading-->
+          <section class="repos-hero reveal">
+            <div class="section-heading">
+              <h1>GitHub repo gallery</h1>
+              <p class="hero-subheading">
+                A JavaScript project displaying a gallery of my repositories from my GitHub portfolio
+                </p>
+            </div>
+            <a href="#" class="hero-link">
+              <figure class="repos-hero-wrapper">
+                <img src="images/repo-hero@1x.jpg" 
+                      alt="GitHub Repo gallery homepage"
+                      srcset="images/repo-hero@1x.jpg 1x,
+                        images/repo-hero@2x.jpg 2x,
+                        images/repo-hero@3x.jpg 3x"
+                      class="repo-hero-img">
+              </figure>
+            </a>
+          </section>
+          
+          <!--CTA-large-->
+          <section class="cta-large">
+            <div class="divider-cta"></div>
+            <div class="cta-container split-column">
+              <div class="cta-headings split-column">
+                <h2>Interested in working together?</h2>
+              </div>
+              <a class="btn btn-primary btn-large hidden" href="index.html#contact">Get in touch</a>
+            </div> 
+            <div class="divider"></div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-content">
+          <p><span class="copy">&#169;</span> 2023 / Designed & developed by
+            Annie Indreiten</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

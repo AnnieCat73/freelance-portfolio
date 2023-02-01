@@ -311,6 +311,16 @@ section:last-of-type {
   text-transform: capitalize;
 }
 
+.hero-subheading {
+  display: block;
+  font-size: clamp(0.8rem, 0.7729rem + 0.1355vw, 0.938rem);
+  letter-spacing: 0.09em;
+  opacity: 0.7;
+  font-style: italic;
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+}
+
 .divider {
   border-top: solid .5px #25201E;
   opacity: 0.15;
