@@ -367,6 +367,7 @@
 
 .browsing a {
   border: 1px solid var(--clr-secondary-btn);
+  text-align: center;
 }
 
 .card {
