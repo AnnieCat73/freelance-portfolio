@@ -1086,16 +1086,12 @@ figure .hero-img {
   border-bottom-right-radius: 4px;
 }
 
-.portfolio-item:hover  {
-  /*opacity: 0.5;*/
-}
-
 .portfolio-item .portfolio-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1em;
- 
+  
 }
 
 .portfolio-item .info-heading {
@@ -1106,13 +1102,20 @@ figure .hero-img {
 }
 
 .portfolio-item .work-btns {
-  gap: 2rem;
+  gap: 2.5rem;
 }
+
 .portfolio-item .portfolio-info a {
   color: var(--clr-accent-300);
   font-size: var(--fs-300);
   cursor: pointer;
   position: relative;
+  transition: .5s ease;
+}
+
+.portfolio-item .portfolio-info a:hover, 
+.portfolio-item .portfolio-info a:focus {
+  color: var(--clr-hover-primary);
 }
 
 .portfolio-item .work-btns .bi {
@@ -1121,6 +1124,12 @@ figure .hero-img {
   color: var(--clr-accent-300);
   top: -2px;
   right: -18px;
+  transition: .5s ease;
+}
+
+.portfolio-item .work-btns .bi:hover,
+.portfolio-item .work-btns .bi:focus {
+  color: var(--clr-hover-primary);
 }
 
 
