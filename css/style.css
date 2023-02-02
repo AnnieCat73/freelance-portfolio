@@ -971,6 +971,10 @@ figure .hero-img {
   align-items: center;
 }
 
+.tick img {
+  width: 1.5rem;
+}
+
 @media (min-width: 36em) {
   .why-content {
     gap: 4em;
@@ -1004,7 +1008,7 @@ figure .hero-img {
 
 .services-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(188px, 1fr));
   gap: 3em;
 }
 
@@ -1067,9 +1071,9 @@ figure .hero-img {
   gap: 1.5em;
   padding: 1.5em;
   box-shadow: 0 4px 16px -4px rgb(0 0 0 / 35%);
-  transition: box-shadow 0.2s ease;
+  /*transition: box-shadow 0.2s ease;
   border-radius: 4px;
-  transition: .5s ease;
+  transition: .5s ease;*/
   color: var(--clr-neutral-300);
 }
   
@@ -1083,7 +1087,7 @@ figure .hero-img {
 }
 
 .portfolio-item:hover  {
-  opacity: 0.5;
+  /*opacity: 0.5;*/
 }
 
 .portfolio-item .portfolio-info {
@@ -1091,6 +1095,7 @@ figure .hero-img {
   flex-direction: column;
   align-items: flex-start;
   gap: 1em;
+ 
 }
 
 .portfolio-item .info-heading {
@@ -1099,6 +1104,25 @@ figure .hero-img {
   align-items: flex-start;
   gap: 0.3em;
 }
+
+.portfolio-item .work-btns {
+  gap: 2rem;
+}
+.portfolio-item .portfolio-info a {
+  color: var(--clr-accent-300);
+  font-size: var(--fs-300);
+  cursor: pointer;
+  position: relative;
+}
+
+.portfolio-item .work-btns .bi {
+  position: absolute;
+  font-size: 1.2rem;
+  color: var(--clr-accent-300);
+  top: -2px;
+  right: -18px;
+}
+
 
 .info-heading .label-pink {
   color: var(--clr-accent-300);
