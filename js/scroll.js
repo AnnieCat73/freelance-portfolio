@@ -1,20 +1,4 @@
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    //console.log(entry)
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    } else {
-      entry.target.classList.remove('show');
-    }
-  });
-})
-
-
-
-const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach((el) => observer.observe(el));
-
-/* Animation for each section while scrolling down the page*
+//ANIMATION FOR EACH SECTION WHILE SCROLLING DOWN THE PAGE
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
 
@@ -32,5 +16,18 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
-reveal();*/
+reveal();
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    //console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
