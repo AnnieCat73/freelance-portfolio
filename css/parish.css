@@ -121,7 +121,8 @@
 
 .research-actions .action h4,
 .user h4, .strategy h4 {
-  font-weight: var(--fw-600);
+  font-size: var(--fs-300);
+  opacity: 0.8;
   font-style: italic;
   margin-bottom: 1rem;
 }
@@ -261,7 +262,9 @@
 }
 
 .fonts h4 {
-  font-weight: var(--fw-600);
+  font-size: var(--fs-300);
+  font-style: italic;
+  opacity: 0.8;
 }
 
 .font-p {
@@ -276,8 +279,7 @@
 }
 
 .ui-design .values li {
-  font-style: italic;
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-600);
 }
 
 .ui-container ul,
