@@ -838,7 +838,8 @@ main {
   text-transform: uppercase;
 }
 
-.hero-subheading {
+.hero-subheading,
+.subheading {
   display: none;
 }
 
