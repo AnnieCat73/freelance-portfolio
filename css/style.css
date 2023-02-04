@@ -1006,7 +1006,7 @@ figure .hero-img {
   .why .section-headings {
     align-items: flex-start;
   }
-  
+
   .heading-mobile {
     display: none;
   }
@@ -1022,25 +1022,62 @@ figure .hero-img {
 
 /*OPTIMIZE*/
 
+.optimise .responsive-content {
+  max-width: 70ch;
+}
+
 .optimise .underline {
-  width: 60%;
+  width: 82%;
 }
 
 .responsive {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
 }
 
 .responsive-img-wrapper img {
   height: auto;
 }
 
-@media (min-width: 36em) {
-  .responsive {
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 4.5rem;
+@media (min-width: 43.75em) {
+  .optimise .underline {
+    width: 35%;
+  }
+}
+
+@media (min-width: 22em) {
+  .optimise .underline {
+    width: 75%;
+  }
+}
+
+@media (min-width: 24em) {
+  .optimise .underline {
+    width: 60%;
+  }
+}
+
+@media (min-width: 30.25em) {
+  .optimise .underline {
+    width: 50%;
+  }
+}
+
+@media (min-width: 43.75em) {
+  .optimise .underline {
+    width: 35%;
+  }
+}
+
+@media (min-width: 62em) {
+  .optimise .underline {
+    width: 45%;
+  }
+}
+
+@media (min-width: 69.375em) {
+  .optimise .underline {
+    width: 35%;
   }
 }
 
