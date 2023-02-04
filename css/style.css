@@ -534,6 +534,7 @@ header .nav-large {
 
 .list-inside li:nth-of-type(5) {
   opacity: 0.9;
+  padding: 1em 1em;
 }
 
 .list-inside li:nth-of-type(5):hover,
@@ -1451,7 +1452,7 @@ figure .hero-img {
   position: absolute;
   color: #707070;
   left: 7px;
-  top: -38px;
+  top: -46px;
   font-size: 3rem;
   font-weight: var(--fw-700);
   letter-spacing: -3px;
