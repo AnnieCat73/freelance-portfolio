@@ -987,14 +987,14 @@ figure .hero-img {
   .why-content {
     gap: 3.5em;
   }
-
-  
 }
+
 @media (min-width: 41em) {
   .ticks-container {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media (min-width: 62em) and (max-width: 73em) {
   .ticks-container {
     grid-template-columns: 1fr;
@@ -1003,12 +1003,17 @@ figure .hero-img {
 
 
 @media (min-width: 62em) {
+  .why .section-headings {
+    align-items: flex-start;
+  }
+  
   .heading-mobile {
     display: none;
   }
 
   .heading-desktop {
     display: block;
+
   }
   .why-content p {
     max-width: 75ch;
