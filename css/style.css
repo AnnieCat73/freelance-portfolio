@@ -135,7 +135,7 @@ h3 {
 h1 {
   font-size: clamp(2.3rem, 2.1200rem + 0.9000vw, 3.2rem);
   font-weight: var(--fw-700);
-  max-width: 28ch;
+  max-width: 23ch;
   text-transform: capitalize;
 }
 
@@ -153,6 +153,14 @@ h3 {
   text-transform: capitalize;
 }
 
+/*in Why and Optimize sections*/
+.subtitle {
+  font-size: var(--fs-200);
+  font-style: italic;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
 .underline {
   background-color: var(--clr-accent-300);
   width: 100%;
@@ -165,15 +173,12 @@ h3 {
 
 .large-text {
   font-size: var(--fs-400);
-  font-weight: var(--fw-500);
-  
 }
 
 @media (min-width: 25em) {
   .large-text {
     font-size: var(--fs-500);
-    font-weight: var(--fw-600);
-  }
+  }  
 }
 
 .btn {
@@ -196,6 +201,7 @@ h3 {
   padding: 0.975em 1.875em;
   margin-right: auto;
   transition: all ease-in-out .3s;
+  letter-spacing: 0.1rem;
 }
 
 .btn-primary:hover,
@@ -843,6 +849,10 @@ main {
   display: none;
 }
 
+.hero .large-text {
+  max-width: 60ch;
+}
+
 .hero h1 {
   padding-top: 0.1em;
   padding-bottom: 1em;
@@ -854,10 +864,6 @@ figure .hero-img {
   height: 15rem;
   margin: 0 auto;
   object-fit: cover;
-}
-
-.large-text {
-  font-size: var(--fs-500);
 }
 
 .hero-btns {
@@ -956,33 +962,42 @@ figure .hero-img {
   gap: 2em;
 }
 
-.why-facts .large-text {
-  margin-bottom: 2rem;
+.tick-content .large-text {
+  margin-bottom: 1rem;
+  font-weight: var(--fw-500);
 }
 
 .ticks-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1em;
+  gap: 2em;
 }
 
 .tick {
   display: flex;
   gap: 1em;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .tick img {
-  width: 1.5rem;
+  width: 2rem;
 }
 
 @media (min-width: 36em) {
   .why-content {
-    gap: 4em;
+    gap: 3.5em;
   }
 
+  
+}
+@media (min-width: 41em) {
   .ticks-container {
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 62em) and (max-width: 73em) {
+  .ticks-container {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1000,6 +1015,30 @@ figure .hero-img {
   }
 }
 
+/*OPTIMIZE*/
+
+.optimise .underline {
+  width: 60%;
+}
+
+.responsive {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.responsive-img-wrapper img {
+  height: auto;
+}
+
+@media (min-width: 36em) {
+  .responsive {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4.5rem;
+  }
+}
+
 
 /*SERVICES*/
 
@@ -1009,7 +1048,7 @@ figure .hero-img {
 
 .services-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(188px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 3em;
 }
 
