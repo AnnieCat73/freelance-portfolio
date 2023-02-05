@@ -571,7 +571,7 @@ header .nav-large {
   color: var(--clr-neutral-100);
   outline: 1px solid var(--clr-neutral-100);
   border-radius: 6px;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   align-self: stretch;
   text-align: center;
 }

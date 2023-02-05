@@ -496,6 +496,11 @@
   gap: 1.5rem;
 }
 
+.ui-design .imagery-content a {
+  color: #043f82;
+  text-decoration: underline;
+}
+
 .ui-design .imagery-img-wrapper  {
   justify-self: center;
   
@@ -653,7 +658,7 @@
 }
 
 .dev-process-img-wrapper img {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 @media (min-width: 48em) {
@@ -661,6 +666,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
+    gap: 3rem;
   }
 }
 
