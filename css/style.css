@@ -1362,7 +1362,7 @@ figure .hero-img {
   }
   .testimonial {
     max-width: 29.188rem;
-    margin: 0 auto;;
+    margin: 0 auto;
   }
 }
 
@@ -1585,6 +1585,7 @@ figure .hero-img {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3em;
+  max-width: 85ch;
 }
 
 .faq-content a {
@@ -1701,9 +1702,9 @@ input[type="checkbox"] {
   display: none;
 }
 
-.cta-large h2 {
+/*.cta-large h2 {
   font-size:  clamp(2.3rem, 2.1200rem + 0.9000vw, 3.2rem);
-}
+}*/
 
 .btn-large {
   text-transform: uppercase;
@@ -1714,14 +1715,17 @@ input[type="checkbox"] {
   gap: 2.5em;
   text-transform: capitalize;
   padding-bottom: 4.5rem;
+  align-items: flex-start;
+  max-width: 60ch;
 }
 
-.cta-container .btn-large {
+/*.cta-container .btn-large {
  margin: 0 auto;
-}
+}*/
 
 .cta-headings {
   gap: 0.5em;
+  
 }
 
 @media (min-width: 36em) {
