@@ -1706,6 +1706,12 @@ input[type="checkbox"] {
   font-size:  clamp(2.3rem, 2.1200rem + 0.9000vw, 3.2rem);
 }*/
 
+.cta-large .cta-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5em;
+}
+
 .btn-large {
   text-transform: uppercase;
   padding: 1em 2.5em;
@@ -1729,6 +1735,10 @@ input[type="checkbox"] {
 }
 
 @media (min-width: 36em) {
+  .cta-large .cta-content-wrapper {
+    gap: 4em;
+  }
+
   .cta-container {
     padding-bottom: 5.5rem;
   }
@@ -1759,6 +1769,13 @@ input[type="checkbox"] {
     margin: 0 auto;
     padding-top: 7.25rem;
   }
+}
+
+@media (min-width: 70em) {
+  .cta-large .cta-content-wrapper {
+    gap: 5em;
+  }
+
 }
 
 
