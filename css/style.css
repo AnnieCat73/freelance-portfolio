@@ -1751,6 +1751,10 @@ input[type="checkbox"] {
     margin: 0 auto;
     padding-top: 7.25rem;
   }
+
+  .cta-large .divider-cta {
+    opacity: 0.1;
+  }
 }
 
 @media (min-width: 62em) {
