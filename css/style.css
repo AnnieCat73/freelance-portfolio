@@ -1069,20 +1069,60 @@ figure .hero-img {
     width: 35%;
   }
 }
+/*@media (min-width: 54em) {
+  .responsive {
+    
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  .responsive-img-wrapper {
+    margin-top: -80px;
+  }
+}
 
 @media (min-width: 62em) {
   .optimise .underline {
     width: 45%;
   }
+}*/
+
+@media (min-width: 54em) and (max-width: 84.375em) {
+  .responsive {
+    
+    grid-template-columns: 1fr;
+  }
+
+  .responsive-img-wrapper {
+    align-self: center;
+  }
 }
 
-@media (min-width: 69.375em) {
-  .optimise .underline {
-    width: 35%;
+@media (min-width: 45em) and (max-width: 62.5em) {
+  
+
+  .responsive-img-wrapper {
+    justify-self: center;
   }
 }
 
 
+
+@media (min-width: 69.375em) {
+  .optimise .underline {
+    width: 75%;
+  }
+}
+
+@media (min-width: 84.376em) {
+  .responsive {
+    
+    grid-template-columns: 1fr 1.7fr;
+  }
+
+  .responsive-img-wrapper {
+    margin-top: -70px;
+  }
+}
 /*SERVICES*/
 
 .services {
