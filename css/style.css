@@ -237,7 +237,7 @@ section:last-of-type {
 @media (min-width: 62em) {
   section:nth-of-type(1) {
     padding-top: 0;
-    padding-bottom: 6.7rem;
+    padding-bottom: 7.3rem;
   }
 }
 
@@ -1148,6 +1148,7 @@ figure .hero-img {
 }
 
 .portfolio-item {
+  
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 13rem auto;
@@ -1719,7 +1720,7 @@ input[type="checkbox"] {
 
 .cta-container {
   gap: 2.5em;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   padding-bottom: 4.5rem;
   align-items: flex-start;
   max-width: 60ch;
@@ -1755,6 +1756,16 @@ input[type="checkbox"] {
   .cta-large .divider-cta {
     opacity: 0.1;
   }
+}
+
+@media (min-width: 51em) {
+  
+  .cta-container {
+    justify-self: center;
+    
+  }
+  
+  
 }
 
 @media (min-width: 62em) {
